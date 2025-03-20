@@ -1,0 +1,38 @@
+.workout-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .category-title {
+    color: #ff5733;
+    margin-top: 20px;
+  }
+  
+  .workout-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .workout-card {
+    width: 250px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .workout-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .workout-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
