@@ -59,9 +59,9 @@ function App() {
    <Route path={'/register-user'} element={<Authentication insideregister={true} />}  />
    <Route path={'/register-dietian'} element={<Authentication insideregister={true} />}  />
    <Route path={'/admin-dashboard'}  element={<AdminDash />}  />
-   <Route path={'/total-users'}  element={isauthorized?<Admintotalusers />:<Navigate to={'/login'}/> }  />
-   <Route path={'/total-dietians'} element={isauthorized?<Totaldietian />:<Navigate to={'/login'}/> }   />
-   <Route path={'/total-payment'} element={isauthorized?<TotalPayment />:<Navigate to={'/login'}/> }   />
+   <Route path={'/total-users'}  element={<Admintotalusers /> }  />
+   <Route path={'/total-dietians'} element={<Totaldietian /> }   />
+   <Route path={'/total-payment'} element={<TotalPayment />}   />
 
 
 
@@ -71,11 +71,11 @@ function App() {
 
    <Route path={'/pending-approval'}   element={<Pendingapproval />} />
   <Route path={'/dietitian-dashboard'}  element={<Dietitiandashboard /> }  />
-  <Route path={'/dietitian-earnings'}  element={isauthorized?<ViewEarnings />:<Navigate to={'/login'}/> }  />
-  <Route path={'/dietitian/chat'}  element={isauthorized?<OpenChats />:<Navigate to={'/login'}/> }/>
-  <Route path={'/dietitian/clients'}  element={isauthorized?<ViewClients />:<Navigate to={'/login'}/> }/>
-  <Route path={'/view/client/progress'}  element={isauthorized?<ClientDetails />:<Navigate to={'/login'}/> }/>
-  <Route path={'/openchat/:id'}  element={isauthorized?<Inbox />:<Navigate to={'/login'}/> }/>
+  <Route path={'/dietitian-earnings'}  element={<ViewEarnings /> }  />
+  <Route path={'/dietitian/chat'}  element={<OpenChats /> }/>
+  <Route path={'/dietitian/clients'}  element={<ViewClients />}/>
+  <Route path={'/view/client/progress'}  element={<ClientDetails /> }/>
+  <Route path={'/openchat/:id'}  element={<Inbox /> }/>
  
 
 
@@ -85,17 +85,17 @@ function App() {
 
 
   <Route path={'/userdashboard'}  element={<Userdash /> }/>
-  <Route path={'/user-profile-settings'}  element={isauthorized?<UserprofileSettings />:<Navigate  to={'/login'}/> }  />
-  <Route path={'/user-consult'}  element={isauthorized?<ConsultPage />:<Navigate to={'/login'}/> }/>
-  <Route path={'/user-workout'}  element={isauthorized?<WorkoutPage />:<Navigate to={'/login'}/> }/>
-  <Route path={'/user-track-progress'}  element={isauthorized?<TrackPage />:<Navigate to={'/login'}/> } />
-  <Route path={'/user-subscribe'}  element={isauthorized?<Subscribe />:<Navigate to={'/login'}/> }/>
-  <Route path={'/consult-now'}  element={isauthorized?<ConsultForm />:<Navigate to={'/login'}/> } />
-  <Route path={'/success'}  element={isauthorized?<Paymentsuccess />:<Navigate to={'/login'}/> } />
-  <Route path={'/mydietitians'}  element={isauthorized?<Mydietitians />:<Navigate to={'/login'}/> } />
-  <Route path={'/chatwithmydietitians'}  element={isauthorized?<Chatwithdietian />:<Navigate to={'/login'}/> } />
-  <Route path={'/seereport'}  element={isauthorized?<Report />:<Navigate to={'/login'}/> }/>
-  <Route path={'/befitai'}  element={isauthorized?<Befitai />:<Navigate to={'/login'}/> } />
+  <Route path={'/user-profile-settings'}  element={<UserprofileSettings />}  />
+  <Route path={'/user-consult'}  element={<ConsultPage /> }/>
+  <Route path={'/user-workout'}  element={<WorkoutPage /> }/>
+  <Route path={'/user-track-progress'}  element={<TrackPage /> } />
+  <Route path={'/user-subscribe'}  element={<Subscribe /> }/>
+  <Route path={'/consult-now'}  element={<ConsultForm /> } />
+  <Route path={'/success'}  element={<Paymentsuccess /> } />
+  <Route path={'/mydietitians'}  element={<Mydietitians /> } />
+  <Route path={'/chatwithmydietitians'}  element={<Chatwithdietian /> } />
+  <Route path={'/seereport'}  element={<Report /> }/>
+  <Route path={'/befitai'}  element={<Befitai />} />
 
 
 
