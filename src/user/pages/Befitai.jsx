@@ -7,7 +7,9 @@ const Befitai = () => {
   const getResponse = async () => {
     setResponse("Thinking...");
 
-    const apiKey = process.env.HUG;
+    const apiKey = process.env.REACT_APP_HUG;
+    console.log("API Key from env:", process.env.REACT_APP_HUG);
+
     const model = "HuggingFaceH4/zephyr-7b-beta";
 
     const data = {
@@ -40,7 +42,7 @@ const Befitai = () => {
         <input
           type="text"
           className="form-control container"
-          placeholder="Ask me anything about nutrition..."
+          placeholder="Ask me anything about nutrition."
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
         />
