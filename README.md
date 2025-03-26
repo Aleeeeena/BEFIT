@@ -957,3 +957,37 @@ function ViewClients() {
 }
 
 export default ViewClients;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/assets/(.*).js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      }
+    ]
+  }
+  
